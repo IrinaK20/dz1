@@ -4,8 +4,9 @@
 // (пример): Цельсий: 21, Фаренгейт: 69.8
 //(9 / 5) * градусы Цельсия + 32
 
-Math.round
-const user = parseInt(prompt("Введите температуру в градусах Цельсия"));
-alert(`Цельсий:${user}, Фаренгейт: ${ Math.round((9 / 5) * user + 32) }`);
+const celsius = Number.parseFloat(prompt("Введите температуру в градусах Цельсия"));
+const f=((9 / 5) * celsius + 32);
+alert(`Цельсий:${celsius}, Фаренгейт: ${f.toFixed(2) }`);
+
 
 
